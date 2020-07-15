@@ -10,7 +10,7 @@ const AddCategory = ({ setCategories }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (newCategory.trim().length > 2) {
-      setCategories((cat) => [...cat, newCategory]);
+      setCategories(() => [newCategory]);
       setNewCategory("");
     }
   };
