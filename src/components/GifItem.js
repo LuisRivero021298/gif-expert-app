@@ -3,9 +3,9 @@ import PropTypes from "prop-types";
 
 const GifItem = ({ title, image }) => {
   return (
-    <div>
+    <div className="card">
+      <img src={image} alt={title} />
       <h4>{title}</h4>
-      <img src={image} alt={title} width="200px" />
     </div>
   );
 };

@@ -16,7 +16,7 @@ const AddCategory = ({ setCategories }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="add-category" onSubmit={handleSubmit}>
       <input type="text" value={newCategory} onChange={handleInputChange} />
       <button type="submit">Add</button>
     </form>
