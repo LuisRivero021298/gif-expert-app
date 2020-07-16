@@ -7,15 +7,15 @@ const GifGrid = ({ category = "" }) => {
   const { data: gifList, loading } = useFetchGifs(category);
 
   return (
-    <>
+    <div className="gif-container">
       <h3>{category}</h3>
       {loading && "Loading..."}
-      <div className="gif-grid">
+      <section className="gif-grid card-columns">
         {gifList.map((gifs) => (
           <GifItem key={gifs._id} {...gifs} />
         ))}
-      </div>
-    </>
+      </section>
+    </div>
   );
 };
 

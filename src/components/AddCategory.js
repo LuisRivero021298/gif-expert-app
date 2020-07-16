@@ -16,9 +16,19 @@ const AddCategory = ({ setCategories }) => {
   };
 
   return (
-    <form className="add-category" onSubmit={handleSubmit}>
-      <input type="text" value={newCategory} onChange={handleInputChange} />
-      <button type="submit">Add</button>
+    <form className="form-inline add-category" onSubmit={handleSubmit}>
+      <div className="form-group mb-2 mr-3">
+        <input
+          className="form-control"
+          type="text"
+          value={newCategory}
+          onChange={handleInputChange}
+        />
+      </div>
+
+      <button className="btn btn-primary mb-2" type="submit">
+        search
+      </button>
     </form>
   );
 };
