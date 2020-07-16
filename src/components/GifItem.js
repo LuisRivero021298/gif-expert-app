@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 const GifItem = ({ title, image }) => {
   return (
-    <article className="card">
+    <article className="card animate__animated animate__slideInLeft">
       <img className="card-image-top" src={image} alt={title} />
       <div className="card-body">
         <h5 className="card-title">{title}</h5>

@@ -8,7 +8,7 @@ const GifGrid = ({ category = "" }) => {
 
   return (
     <div className="gif-container">
-      <h3>{category}</h3>
+      <h3>{category} Gifs</h3>
       {loading && "Loading..."}
       <section className="gif-grid card-columns">
         {gifList.map((gifs) => (
